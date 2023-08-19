@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(235, 18%, 26%);
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* border: 2px solid red; */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  width: 700px;
+  height: 470px;
+  padding: 15px 10px 15px 50px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.right {
+  width: 55%;
+  height: 100%;
+  /* align-items: center; */
+  /* border: 2px solid red; */
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.left {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 80%;
+  color: hsl(235, 18%, 26%);
+}
+
+.title h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 14px;
+}
+
+.detail p {
+  padding-top: 10px;
+  /* border: 2px solid black; */
+  font-size: 14px;
+}
+
+.detail p span {
+  /* padding-top: 10px; */
+  /* border: 2px solid black; */
+  padding-top: 10px;
+}
+
+.detail p img {
+  padding-right: 5px;
+  height: 20px;
+  padding-bottom: 0;
+}
+
+/* form */
+.form {
+  margin-top: 15px;
+}
+.form label {
+  color: hsl(234, 29%, 20%);
+  /* color: white; */
+  font-weight: bold;
+  font-size: 12px;
+}
+.form input {
+  width: 90%;
+  margin: 10px 0;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 2px solid hsl(231, 7%, 60%);
+}
+
+.label-div {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.invalid {
+  display: none;
+}
+
+/* button */
+.subscribe-btn {
+  font-size: 1rem;
+  height: 40px;
+  width: 90%;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 1px 5px 30px hsl(4, 100%, 67%);
+  transition: all ease-in-out 0.7s;
+}
+
+/* success message */
+.success {
+  /* border: 2px solid red; */
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  display: none;
+}
+
+.success-tick {
+  width: 45px;
+  /* border: 2px solid black; */
+  height: 45px;
+}
+
+.success-tick img {
+  width: 100%;
+  height: 100%;
+}
+
+.success-title {
+  font-size: 2.7rem;
+  font-weight: bolder;
+  color: hsl(234, 29%, 20%);
+  margin: 1.2rem 0;
+  line-height: 2.8rem;
+}
+
+.success-mess {
+  color: hsl(235, 18%, 26%);
+  margin-bottom: 2rem;
+  font-size: 12px;
+  line-height: 1.1rem;
+}
+
+#email-confor {
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+}
+
+.dismiss-btn {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid transparent;
+  height: 2.4rem;
+  font-size: 14px;
+  background-color: hsl(235, 18%, 26%);
+  color: #fff;
+  border-radius: 7px;
+  /* font-weight: bold; */
+}
+
+.dismiss-btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 5px 3px 20px hsl(4, 100%, 67%);
+  transition: all ease-in 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .right {
+    width: 100%;
+    height: 45%;
+  }
+  .left {
+    padding: 10px 0 15px 30px;
+  }
+
+  .success {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding-top: 50%;
+    padding: 50% 5px 0 15px;
+  }
+
+  .success-tick {
+    height: 50px;
+    width: 50px;
+  }
+
+  .success-title {
+    font-size: 2rem;
+  }
+
+  .success-mess {
+    font-size: 14px;
+    line-height: 1.3rem;
+  }
+
+  .dismiss-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
