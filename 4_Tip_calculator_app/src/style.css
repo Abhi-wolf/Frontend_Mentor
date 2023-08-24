@@ -26,6 +26,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
+  position: relative;
+
 }
 
 .title {
@@ -291,10 +293,17 @@ body {
   .total {
     justify-content: space-between;
   }
+
+  .attribution {
+    display: block;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
     width: 80%;
+  }
+  .attribution {
+    display: block;
   }
 }
