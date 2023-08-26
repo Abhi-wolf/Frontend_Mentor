@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="upper">
+        <div class="title">Ip address tracker</div>
+        <div class="inputs">
+            <input type="text" placeholder="Search for any IP address or domain" id="ipInput">
+            <button id="search"><img src="src/images/icon-arrow.svg" alt=""></button>
+        </div>
+        <!-- <img src="images/pattern-bg-mobile.png" alt=""> -->
+    </div>
+    <div class="Info">
+        <div class="ipAddressInfo">
+            <p>Ip Address</p>
+            <h3 id="ipAdd">8.8.8.8</h3>
+        </div>
+        <hr>
+        <div class="locationInfo">
+            <p>Location</p>
+            <h3 id="location">Brooklyn, NY 10001</h3>
+        </div>
+        <hr>
+
+        <div class="timezoneInfo">
+            <p>Timezone</p>
+            <h3>UTC  <span id="timeZone">-07:00</span></h3>
+        </div>
+        <hr>
+
+        <div class="ispInfo">
+            <p>ISP</p>
+            <h3 id="isp">Google LLC</h3>
+        </div>
+    </div>
+    <div class="mapImage">
+        <div id="map"></div>
+    </div>
+</body>
+<script src="src/script.js"></script>
+
+</html>
