@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+  --bor: 2px solid red;
+}
+
+body {
+    /* border: var(--bor); */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* border: var(--bor); */
+    background-color: var(--DarkGrayishBlue);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.adviceTitle {
+    font-size: 1.2rem;
+    color: var(--NeonGreen);
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.advice_message {
+    font-size: 28px;
+    text-align: center;
+    color: var(--LightCyan);
+}
+
+.separator {
+    margin-bottom: 2.5rem;
+}
+
+.dice {
+    /* border: var(--bor); */
+    padding: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    position: absolute;
+    bottom: -10%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice img {
+    height: 25px;
+    width: 25px;
+}
+
+@media (width >= 900px) {
+    .container {
+        width: 40%;
+    }
+}
