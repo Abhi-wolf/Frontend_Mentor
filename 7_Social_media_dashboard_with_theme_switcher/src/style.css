@@ -32,6 +32,10 @@
   --bord: 2px solid red;
 }
 
+html {
+  position: relative;
+}
+
 body {
   width: 100vw;
   height: auto;
@@ -52,6 +56,7 @@ body.bodyLight {
   /* border: var(--bord); */
   width: 95%;
   padding: 1.3rem;
+  padding-bottom: 2rem;
 }
 
 /* title_LDtoggle */
